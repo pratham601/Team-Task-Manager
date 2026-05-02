@@ -24,11 +24,11 @@ function Tasks() {
     });
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        fetchData();
-        fetchUsers();
-    }, [filters]);
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+    fetchData();
+    fetchUsers();
+}, [filters]);
     const fetchData = async () => {
         try {
             const token = localStorage.getItem('token');
