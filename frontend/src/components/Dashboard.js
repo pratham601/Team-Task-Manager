@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import toast from 'react-hot-toast';
 import { CheckCircle, Clock, AlertCircle, TrendingUp, FolderOpen, Bell } from 'lucide-react';
 
 const API_URL = 'https://team-task-manager-production-1669.up.railway.app/api';
